@@ -50,7 +50,8 @@ Folder ini berisi shortcut klik kanan Windows Explorer untuk menjalankan develop
      Script akan otomatis menjalankan `composer install` terlebih dahulu sebelum server dijalankan!
    - **Pengecekan file konfigurasi `.env`:**
      Jika file konfigurasi `.env` belum dibuat namun terdapat `.env.example`, script akan memberikan pengingat ramah untuk menyalin `.env.example` ke `.env` dan menjalankan `php artisan key:generate`.
-3. **Eksekusi Server Instan (Zero-Friction):**
+3. **Kompatibilitas Luas & Eksekusi Server Instan (Zero-Friction):**
+   - Mendukung **semua versi Laravel** yang memiliki file `artisan` (mulai dari Laravel 4.x, 5.x, 6, 7, 8, 9, 10, 11, 12, hingga versi masa depan).
    - Menjalankan `php artisan serve` standar secara otomatis tanpa friksi dan tanpa perlu mengetik manual di terminal.
 
 ---
