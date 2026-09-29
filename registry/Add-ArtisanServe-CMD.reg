@@ -1,0 +1,24 @@
+Windows Registry Editor Version 5.00
+
+; ==============================================================
+; [CMD Version] Artisan Serve Context Menu untuk Windows Explorer
+; Bekerja menggunakan Command Prompt bawaan Windows (cmd.exe)
+; Catatan: Sangat disarankan menggunakan 'install.bat' agar path
+; profil pengguna otomatis disesuaikan secara dinamis.
+; ==============================================================
+
+; 1. Klik kanan pada FOLDER
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\ArtisanServe]
+@="Artisan Serve"
+"Icon"="C:\\Users\\adarmawan117\\.icons\\laravel.ico"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\ArtisanServe\command]
+@="cmd.exe /k cd /d \"%1\" && php artisan serve"
+
+; 2. Klik kanan pada RUANG KOSONG (Background) di dalam folder
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\ArtisanServe]
+@="Artisan Serve"
+"Icon"="C:\\Users\\adarmawan117\\.icons\\laravel.ico"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\ArtisanServe\command]
+@="cmd.exe /k cd /d \"%V\" && php artisan serve"

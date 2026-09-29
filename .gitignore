@@ -1,0 +1,11 @@
+# Windows
+Thumbs.db
+desktop.ini
+*.tmp
+
+# Editors
+.vscode/
+.idea/
+
+# Logs
+*.log
