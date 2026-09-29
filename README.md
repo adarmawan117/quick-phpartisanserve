@@ -2,6 +2,10 @@
 
 Folder ini berisi shortcut klik kanan Windows Explorer untuk menjalankan development server Laravel (`php artisan serve`) secara instan (0 ms tanpa lag) dengan icon resmi Laravel.
 
+<p align="center">
+  <img src="./Klik%20Kanan%20Context.jpg" alt="Preview Artisan Serve Windows Explorer" width="340" />
+</p>
+
 ---
 
 ## 📁 Struktur File
@@ -11,6 +15,8 @@ Folder ini berisi shortcut klik kanan Windows Explorer untuk menjalankan develop
 ├── uninstall.bat           <-- [UNINSTALL] Double-click untuk mencopot shortcut
 ├── artisan-serve.cmd       <-- Script runner cerdas yang dieksekusi saat klik kanan
 ├── laravel.ico             <-- Icon resmi Laravel
+├── Klik Kanan Context.jpg  <-- Screenshot tampilan context menu
+├── social-preview.png      <-- Banner social preview (GitHub & Open Graph)
 ├── registry/               <-- Arsip file mentah .reg (jangan klik ganda file di sini)
 │   ├── Add-ArtisanServe-CMD.reg
 │   ├── Add-ArtisanServe-Terminal.reg
