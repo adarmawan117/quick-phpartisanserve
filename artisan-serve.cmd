@@ -33,9 +33,17 @@ if not exist "artisan" (
 :: 2. Periksa apakah dependensi composer sudah diinstall (folder vendor)
 if not exist "vendor" (
     echo  [INFO] Folder 'vendor' belum ditemukan.
-    echo  Menjalankan instalasi dependensi otomatis (composer install)...
+    echo  Menjalankan instalasi dependensi otomatis: composer install...
     echo  --------------------------------------------------------------
     call composer install
+    if errorlevel 1 (
+        echo.
+        echo  [ERROR] Gagal menjalankan composer install!
+        echo  Silakan periksa pesan kesalahan di atas.
+        echo.
+        pause
+        exit /b 1
+    )
     echo.
 )
 
